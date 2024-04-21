@@ -71,7 +71,7 @@ const Links = () => {
             onClick={() => setMenu(false)}
           >
             <div
-              className='w-1/2 absolute top-0 left-0  flex flex-col pt-20 pb-8 gap-6 bg-secondary lg:hidden z-40'
+              className=' w-1/2 absolute top-0 left-0  flex flex-col pt-20 pb-8 gap-6 bg-secondary lg:hidden z-40'
               onClick={() => setMenu(false)}
             >
               <Link

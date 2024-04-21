@@ -1,7 +1,9 @@
+'use client'
 import { Button } from '@/components/ui/button'
 import Progress from './Progress'
-
+import { useRouter } from 'next/navigation'
 const HeroInfo = () => {
+  const router = useRouter()
   return (
     <div className='flex flex-col min-h-[calc(100vh-184px)] items-start justify-center gap-6 '>
       <h1 className='text-5xl font-bold'>Explore Our Exquisite Hotel</h1>
@@ -9,7 +11,7 @@ const HeroInfo = () => {
         Experience an Exquisite Hotel Immersed in Rich History and Timeless
         Elegance
       </p>
-      <Button size='lg' className='max-lg:self-center'>Get Started</Button>
+      <Button onClick={() => router.push('/rooms')} size='lg'  className='max-lg:self-center'>Get Started</Button>
       <div className='w-full grid grid-cols-3 gap-4 place-items-start max-lg:place-items-center max-lg:grid-cols-2 max-sm:grid-cols-1'>
         <div className='flex flex-col items-center gap-4'>
           <p>Basic Room</p>
