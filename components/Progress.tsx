@@ -34,7 +34,7 @@ const Progress = ({
   }, [endValue, duration])
 
   return (
-    <p className='text-3xl font-semibold transition duration-1500'>
+    <p className='text-4xl font-semibold transition duration-1500'>
       {Math.round(progress)}
     </p>
   )
