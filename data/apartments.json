@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "title": "Deluxe Suite",
+    "img": [
+      "/images/suite-1.webp",
+      "/images/suite-2.webp",
+      "/images/suite-3.webp"
+      
+    ],
+    "area": 200,
+    "price": 300,
+    "amenities": ["King-sized bed", "Air conditioning", "Wifi", "Free parking","Coffee Maker"],
+    "safety&hygiene": ["Daily Cleaning","Disinfections and Sterilizations","Fire Extinguishers","Smoke Detectors","Carbon Monoxide Detectors"],
+    "description": "A spacious and luxurious suite with stunning views. Enjoy the comfort and elegance of this beautiful suite, complete with modern amenities and breathtaking vistas of the city skyline."
+  },
+  {
+    "id": 2,
+    "title": "Basic Suite",
+    "img": [
+      "/images/basic-1.webp",
+      "/images/basic-2.webp",
+      "/images/basic-3.webp"
+      
+    ],
+    "area": 150,
+    "price": 150,
+    "amenities": ["King-sized bed", "Air conditioning", "Wifi", "Free parking","Coffee Maker"],
+    "safety&hygiene": ["Daily Cleaning","Disinfections and Sterilizations","Fire Extinguishers","Smoke Detectors","Carbon Monoxide Detectors"],
+    "description": "A spacious executive room with a view of the city skyline. Enjoy the comforts of modern luxury in this stylishly appointed room, offering stunning vistas of the city's skyline."
+  },
+  {
+    "id": 3,
+    "title": "Deluxe Suite",
+    "img": [
+      "/images/deluxe-1.webp",
+      "/images/deluxe-2.webp",
+      "/images/deluxe-3.webp",
+      "/images/deluxe-4.webp",
+      "/images/deluxe-5.webp",
+      "/images/deluxe-6.webp"
+      
+    ],
+    "area": 250,
+    "price": 350,
+    "amenities": ["King-sized bed", "Air conditioning", "Wifi", "Free parking","Coffee Maker"],
+    "safety&hygiene": ["Daily Cleaning","Disinfections and Sterilizations","Fire Extinguishers","Smoke Detectors","Carbon Monoxide Detectors"],
+    "description": "A spacious executive room with a view of the city skyline. Enjoy the comforts of modern luxury in this stylishly appointed room, offering stunning vistas of the city's skyline."
+  },
+  {
+    "id": 4,
+    "title": "Luxury Villa",
+    "img": [
+      "/images/villa-1.webp",
+      "/images/villa-2.webp",
+      "/images/villa-3.webp"
+      
+      
+    ],
+    "area": 350,
+    "price": 450,
+    "amenities": ["King-sized bed", "Air conditioning", "Wifi", "Free parking","Coffee Maker"],
+    "safety&hygiene": ["Daily Cleaning","Disinfections and Sterilizations","Fire Extinguishers","Smoke Detectors","Carbon Monoxide Detectors"],
+    "description": "An exquisite villa with a private pool and garden. Indulge in the ultimate luxury and tranquility with this spacious villa, featuring a private pool and a beautifully landscaped garden."
+  },
+  {
+    "id": 5,
+    "title": "Executive Room",
+    "img": [
+      "/images/executive-1.webp",
+      "/images/executive-2.webp",
+      "/images/executive-3.webp"
+      
+      
+    ],
+    "area": 350,
+    "price": 450,
+    "amenities": ["King-sized bed", "Air conditioning", "Wifi", "Free parking","Coffee Maker"],
+    "safety&hygiene": ["Daily Cleaning","Disinfections and Sterilizations","Fire Extinguishers","Smoke Detectors","Carbon Monoxide Detectors"],
+    "description": "A spacious executive room with a view of the city skyline. Enjoy the comforts of modern luxury in this stylishly appointed room, offering stunning vistas of the city's skyline."
+  },
+  {
+    "id": 6,
+    "title": "Family Suite",
+    "img": [
+      "/images/family-1.webp",
+      "/images/family-2.webp",
+      "/images/family-3.webp"
+      
+      
+    ],
+    "area": 350,
+    "price": 450,
+    "amenities": ["King-sized bed", "Air conditioning", "Wifi", "Free parking","Coffee Maker"],
+    "safety&hygiene": ["Daily Cleaning","Disinfections and Sterilizations","Fire Extinguishers","Smoke Detectors","Carbon Monoxide Detectors"],
+    "description": "A spacious suite suitable for families with children. This comfortable and well-appointed suite offers ample space for families to relax and enjoy their stay. It's the perfect choice for a memorable family vacation."
+  },
+  {
+    "id": 7,
+    "title": "Room for Newlyweds",
+    "img": [
+      "/images/newlywed-1.webp",
+      "/images/newlywed-2.webp",
+      "/images/newlywed-3.webp"
+      
+      
+    ],
+    "area": 350,
+    "price": 450,
+    "amenities": ["King-sized bed", "Air conditioning", "Wifi", "Free parking","Coffee Maker"],
+    "safety&hygiene": ["Daily Cleaning","Disinfections and Sterilizations","Fire Extinguishers","Smoke Detectors","Carbon Monoxide Detectors"],
+    "description": "Room for newlyweds in the  it's a wonderful gift for the newlyweds, the possibility to organize a wedding photo shoots and a great start of family life!"
+  }
+]

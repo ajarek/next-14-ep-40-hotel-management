@@ -31,7 +31,9 @@ const Links = () => {
           href='/'
           className='flex items-center gap-2 max-sm-gap-1'
         >
-          <h1 className='font-semibold text-xl text-primary max-sm:hidden  '>HOTEL KOLBERG</h1>
+          <h1 className='font-semibold text-xl text-primary   '>
+            HOTEL KOLBERG
+          </h1>
         </Link>
 
         <div className='max-lg:hidden flex '>

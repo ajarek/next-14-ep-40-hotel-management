@@ -9,8 +9,8 @@ const HeroInfo = () => {
         Experience an Exquisite Hotel Immersed in Rich History and Timeless
         Elegance
       </p>
-      <Button size='lg'>Get Started</Button>
-      <div className='w-full grid grid-cols-3 gap-4 place-items-start'>
+      <Button size='lg' className='max-lg:self-center'>Get Started</Button>
+      <div className='w-full grid grid-cols-3 gap-4 place-items-start max-lg:place-items-center max-lg:grid-cols-2 max-sm:grid-cols-1'>
         <div className='flex flex-col items-center gap-4'>
           <p>Basic Room</p>
          <Progress endValue={50} duration={1500}/>
