@@ -9,7 +9,7 @@ export default async function Search() {
       className=' w-full flex gap-2 mb-4'
     >
       <Input
-        className=''
+        className='text-xl px-4'
         type='text'
         name='search'
         placeholder='Search...'

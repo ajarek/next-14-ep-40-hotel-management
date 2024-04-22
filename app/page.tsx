@@ -1,5 +1,6 @@
 import HeroImage from "@/components/HeroImage";
 import HeroInfo from "@/components/HeroInfo";
+import Search from "@/components/Search";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <HeroInfo/>
       <HeroImage/>
      </div>
+     <Search/>
       </main>
   );
 }
