@@ -8,8 +8,8 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
 import Search from '@/components/Search'
+import ButtonCard from '@/components/ButtonCard'
 const Rooms = () => {
   return (
     <main className='flex min-h-screen flex-col items-center justify-between px-24 py-12'>
@@ -37,7 +37,7 @@ const Rooms = () => {
               </CardDescription>
             </CardHeader>
             <CardFooter>
-              <Button>BOOKED</Button>
+            <ButtonCard id={apartment.id}/>
             </CardFooter>
           </Card>
         ))}

@@ -9,6 +9,8 @@ import {
   CardTitle,
 } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+import  Link  from 'next/link'
+import ButtonCard from '@/components/ButtonCard'
 
 const SerachPage = async ({ params }: { params: { searchTerm: string } }) => {
   const { searchTerm } = params
@@ -21,6 +23,7 @@ const SerachPage = async ({ params }: { params: { searchTerm: string } }) => {
       .filter((apartment) => apartment.title.toLowerCase().includes(searchTerm.toLowerCase()))
       .map((apartment) => (
         <Card key={apartment.id}>
+         
           <CardHeader>
             <CardTitle className='w-[300px] h-[200px] rounded-sm overflow-hidden max-lg:w-full '>
               <Image
@@ -40,8 +43,9 @@ const SerachPage = async ({ params }: { params: { searchTerm: string } }) => {
             </CardDescription>
           </CardHeader>
           <CardFooter>
-            <Button>BOOKED</Button>
+            <ButtonCard id={apartment.id}/>
           </CardFooter>
+         
         </Card>
       ))}
     </div>
