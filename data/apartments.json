@@ -11,7 +11,7 @@
     "area": 200,
     "price": 300,
     "amenities": ["King-sized bed", "Air conditioning", "Wifi", "Free parking","Coffee Maker"],
-    "safety&hygiene": ["Daily Cleaning","Disinfections and Sterilizations","Fire Extinguishers","Smoke Detectors","Carbon Monoxide Detectors"],
+    "hygiene": ["Daily Cleaning","Disinfections and Sterilizations","Fire Extinguishers","Smoke Detectors","Carbon Monoxide Detectors"],
     "description": "A spacious and luxurious suite with stunning views. Enjoy the comfort and elegance of this beautiful suite, complete with modern amenities and breathtaking vistas of the city skyline."
   },
   {
@@ -26,7 +26,7 @@
     "area": 150,
     "price": 150,
     "amenities": ["King-sized bed", "Air conditioning", "Wifi", "Free parking","Coffee Maker"],
-    "safety&hygiene": ["Daily Cleaning","Disinfections and Sterilizations","Fire Extinguishers","Smoke Detectors","Carbon Monoxide Detectors"],
+    "hygiene": ["Daily Cleaning","Disinfections and Sterilizations","Fire Extinguishers","Smoke Detectors","Carbon Monoxide Detectors"],
     "description": "A spacious executive room with a view of the city skyline. Enjoy the comforts of modern luxury in this stylishly appointed room, offering stunning vistas of the city's skyline."
   },
   {
@@ -44,7 +44,7 @@
     "area": 250,
     "price": 350,
     "amenities": ["King-sized bed", "Air conditioning", "Wifi", "Free parking","Coffee Maker"],
-    "safety&hygiene": ["Daily Cleaning","Disinfections and Sterilizations","Fire Extinguishers","Smoke Detectors","Carbon Monoxide Detectors"],
+    "hygiene": ["Daily Cleaning","Disinfections and Sterilizations","Fire Extinguishers","Smoke Detectors","Carbon Monoxide Detectors"],
     "description": "A spacious executive room with a view of the city skyline. Enjoy the comforts of modern luxury in this stylishly appointed room, offering stunning vistas of the city's skyline."
   },
   {
@@ -60,7 +60,7 @@
     "area": 350,
     "price": 450,
     "amenities": ["King-sized bed", "Air conditioning", "Wifi", "Free parking","Coffee Maker"],
-    "safety&hygiene": ["Daily Cleaning","Disinfections and Sterilizations","Fire Extinguishers","Smoke Detectors","Carbon Monoxide Detectors"],
+    "hygiene": ["Daily Cleaning","Disinfections and Sterilizations","Fire Extinguishers","Smoke Detectors","Carbon Monoxide Detectors"],
     "description": "An exquisite villa with a private pool and garden. Indulge in the ultimate luxury and tranquility with this spacious villa, featuring a private pool and a beautifully landscaped garden."
   },
   {
@@ -76,7 +76,7 @@
     "area": 350,
     "price": 450,
     "amenities": ["King-sized bed", "Air conditioning", "Wifi", "Free parking","Coffee Maker"],
-    "safety&hygiene": ["Daily Cleaning","Disinfections and Sterilizations","Fire Extinguishers","Smoke Detectors","Carbon Monoxide Detectors"],
+    "hygiene": ["Daily Cleaning","Disinfections and Sterilizations","Fire Extinguishers","Smoke Detectors","Carbon Monoxide Detectors"],
     "description": "A spacious executive room with a view of the city skyline. Enjoy the comforts of modern luxury in this stylishly appointed room, offering stunning vistas of the city's skyline."
   },
   {
@@ -92,7 +92,7 @@
     "area": 350,
     "price": 450,
     "amenities": ["King-sized bed", "Air conditioning", "Wifi", "Free parking","Coffee Maker"],
-    "safety&hygiene": ["Daily Cleaning","Disinfections and Sterilizations","Fire Extinguishers","Smoke Detectors","Carbon Monoxide Detectors"],
+    "hygiene": ["Daily Cleaning","Disinfections and Sterilizations","Fire Extinguishers","Smoke Detectors","Carbon Monoxide Detectors"],
     "description": "A spacious suite suitable for families with children. This comfortable and well-appointed suite offers ample space for families to relax and enjoy their stay. It's the perfect choice for a memorable family vacation."
   },
   {
@@ -108,7 +108,7 @@
     "area": 350,
     "price": 450,
     "amenities": ["King-sized bed", "Air conditioning", "Wifi", "Free parking","Coffee Maker"],
-    "safety&hygiene": ["Daily Cleaning","Disinfections and Sterilizations","Fire Extinguishers","Smoke Detectors","Carbon Monoxide Detectors"],
+    "hygiene": ["Daily Cleaning","Disinfections and Sterilizations","Fire Extinguishers","Smoke Detectors","Carbon Monoxide Detectors"],
     "description": "Room for newlyweds in the  it's a wonderful gift for the newlyweds, the possibility to organize a wedding photo shoots and a great start of family life!"
   }
 ]
