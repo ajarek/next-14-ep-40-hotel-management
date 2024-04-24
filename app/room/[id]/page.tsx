@@ -10,6 +10,7 @@ import {
   FireExtinguisher,
   BellElectric,
 } from 'lucide-react'
+import BookingRoom from '@/components/BookingRoom'
 const Room = ({ params }: { params: { id: string } }) => {
   const apartment = apartments.find(
     (apartment) => apartment.id === parseInt(params.id)
@@ -53,7 +54,7 @@ const Room = ({ params }: { params: { id: string } }) => {
             <span>{apartment?.title} ({apartment?.area} m<sup>2</sup>)</span>
             <span>$ {apartment?.price}</span>
           </h1>
-          <div className='grid grid-cols-4 gap-4'>
+          <div className='grid grid-cols-4 gap-4 max-sm:grid-cols-2'>
             <div className=' rounded-sm w-full h-36 flex flex-col justify-center items-center bg-accent'>
               <Bed />
               {apartment?.amenities[0]}
@@ -126,7 +127,9 @@ const Room = ({ params }: { params: { id: string } }) => {
           </div>
          
         </div>
-        <div className='col-start-3 col-end-4 max-lg:col-start-1 max-lg:col-end-2 flex flex-col gap-4 border-2 border-red-500'></div>
+        <div className='col-start-3 col-end-4 max-lg:col-start-1 max-lg:col-end-2 flex flex-col gap-4 border-2 '>
+          <BookingRoom price={apartment?.price || 0}/>
+        </div>
       </div>
     </main>
   )
