@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 const HeroInfo = () => {
   const router = useRouter()
   return (
-    <div className='flex flex-col min-h-[calc(100vh-184px)] items-start justify-center gap-6 '>
+    <div className='flex flex-col  items-start justify-start gap-6  '>
       <h1 className='text-5xl font-bold'>Explore Our Exquisite Hotel</h1>
       <p>
         Experience an Exquisite Hotel Immersed in Rich History and Timeless
