@@ -128,7 +128,7 @@ const Room = ({ params }: { params: { id: string } }) => {
          
         </div>
         <div className='col-start-3 col-end-4 max-lg:col-start-1 max-lg:col-end-2 flex flex-col gap-4 border-2 '>
-          <BookingRoom price={apartment?.price || 0}/>
+          <BookingRoom price={apartment?.price || 0} title={apartment?.title || ''}/>
         </div>
       </div>
     </main>

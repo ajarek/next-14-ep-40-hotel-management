@@ -7,7 +7,7 @@ import DatePicker from './DatePicker'
 import { useRouter } from 'next/navigation'
 import ToastAlert from './ToastAlert'
 
-const BookingRoom = ({ price }: { price: number }) => {
+const BookingRoom = ({ price, title }: { price: number, title: string }) => {
   const [error, setError] = React.useState(false)
   const router = useRouter()
   const handleSubmit = (e: any) => {
@@ -29,7 +29,7 @@ const BookingRoom = ({ price }: { price: number }) => {
       e.target[3].value
     ) {
       router.push(
-        `/booking/?firstDate=${e.target[0].innerText}&secondaryDate=${e.target[1].innerText}&adults=${e.target[2].value}&children=${e.target[3].value}&price=${price}`
+        `/booking/?firstDate=${e.target[0].innerText}&secondaryDate=${e.target[1].innerText}&adults=${e.target[2].value}&children=${e.target[3].value}&price=${price}&title=${title}&start=${e.target[0].innerText}&end=${e.target[1].innerText}`
       )
     } else {
       setError(true)
@@ -46,7 +46,10 @@ const BookingRoom = ({ price }: { price: number }) => {
         Check-in time is 12:00 PM, checkout time is 11:59 AM. If you leave
         behind any items, please contact the receptionist.
       </p>
+     <div className='w-full flex justify-center'>
      {error? <ToastAlert/>:null}
+      </div>
+        
       <form
         onSubmit={handleSubmit}
         className='w-full flex flex-col gap-8'
