@@ -6,7 +6,7 @@ import { Smartphone } from 'lucide-react'
 
 const Contact = async () => {
   return (
-    <div className='w-full min-h-screen -mt-20 grid grid-cols-2 max-lg:grid-cols-1 px-12 py-24 max-sm:px-2 place  items-center gap-4 '>
+    <div className='w-full min-h-screen  grid grid-cols-2 max-lg:grid-cols-1 px-12 py-24 max-sm:px-2 place  items-center gap-4 '>
       <div className='flex justify-center items-center '>
         <Image
           src='/images/contact.jpeg'

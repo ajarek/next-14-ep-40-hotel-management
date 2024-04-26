@@ -76,8 +76,7 @@ const Links = () => {
             >
               <Link
                 href='/'
-                className={`flex items-center gap-4 hover:bg-primary hover:text-primary-foreground hover:rounded-sm  rounded-sm px-4 py-1 transition ${
-                  pathname === '/' ? 'active ' : 'px-4'
+                className={`flex items-center gap-4 hover:bg-primary hover:text-primary-foreground hover:rounded-sm  rounded-sm px-4 py-1 transition ${pathname === '/' ? 'active ' : 'px-4'
                 }`}
               >
                 Home
