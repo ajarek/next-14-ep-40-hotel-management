@@ -47,7 +47,7 @@ const BookingRoom = ({ price, title }: { price: number, title: string }) => {
         behind any items, please contact the receptionist.
       </p>
      <div className='w-full flex justify-center'>
-     {error? <ToastAlert/>:null}
+     {error? <ToastAlert text='Please complete all fields correctly!' classToast='bg-red-500 text-white'/>:null}
       </div>
         
       <form

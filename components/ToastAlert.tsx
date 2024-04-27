@@ -1,12 +1,12 @@
 import { ToastAction } from '@/components/ui/toast'
 
-const ToastAlert = () => {
+const ToastAlert = ({ text, classToast }: { text: string, classToast: string }) => {
   return (
     <ToastAction
-      className='bg-red-500 text-white'
+      className={`${ classToast }`}
       altText='Undo'
     >
-      Please complete all fields correctly!
+      {text}
     </ToastAction>
   )
 }

@@ -1,18 +1,20 @@
 'use client'
 
-
+import * as React from 'react'
 import { useRouter } from 'next/navigation'
 import { Input } from './ui/input'
 import { Button } from './ui/button'
 import { Label } from './ui/label'
+import ToastAlert from './ToastAlert'
 
 const Payment = ({ allPayValue }: { allPayValue: string }) => {
   const router = useRouter()
+  const [alert, setAlert] = React.useState(false)
 
-  
   const handleSubmit = async (e: any) => {
     e.preventDefault()
-   alert('Payment Successful')
+    setAlert(true)
+
     setTimeout(() => {
       router.push('/')
     }, 2000)
@@ -23,8 +25,15 @@ const Payment = ({ allPayValue }: { allPayValue: string }) => {
       
       <form
         onSubmit={handleSubmit}
-        className='max-w-[600px] w-full max-sm:w-full bg-secondary p-6 max-sm:p-4 rounded-lg shadow-lg'
+        className='max-w-[600px] w-full max-sm:w-full bg-secondary p-6 max-sm:p-4 rounded-lg shadow-lg relative'
       >
+        {alert?<div className='w-100% absolute top-2 right-6'>
+        {' '}
+        <ToastAlert
+          text={`Payment of $ ${allPayValue} Successful`}
+          classToast='bg-green-500 text-white'
+        />
+      </div>:null}
         <div className='w-100%'>
           <Label htmlFor='cardNumber'>Payment amount $</Label>
           <Input
