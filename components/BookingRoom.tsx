@@ -5,24 +5,33 @@ import { Button } from './ui/button'
 import { Label } from '@/components/ui/label'
 import DatePicker from './DatePicker'
 import { useRouter } from 'next/navigation'
-import ToastAlert from './ToastAlert'
+import { ToastAction } from '@/components/ui/toast'
+import { useToast } from '@/components/ui/use-toast'
 
-const BookingRoom = ({ price, title }: { price: number, title: string }) => {
-  const [error, setError] = React.useState(false)
+const BookingRoom = ({ price, title }: { price: number; title: string }) => {
+  const { toast } = useToast()
   const router = useRouter()
+
+  const toastAlert = () => {
+    toast({
+      variant: 'destructive',
+      title: 'Uh oh! Something went wrong.',
+      description: 'Please complete all fields correctly!',
+      action: <ToastAction altText='Try again'>Try again</ToastAction>,
+    })
+  }
+
   const handleSubmit = (e: any) => {
-    setError(false)
     e.preventDefault()
     const today = new Date()
     const first = new Date(e.target[0].innerText)
     const second = new Date(e.target[1].innerText)
     const period = (second.getTime() - first.getTime()) / (1000 * 60 * 60 * 24)
-    const todayDate = (first.getDate()-today.getDate())
-  
-  
+    const todayDate = first.getDate() - today.getDate()
+
     if (
-      todayDate >=0 &&
-       period > 0 &&
+      todayDate >= 0 &&
+      period > 0 &&
       e.target[0].innerText !== 'Check in date' &&
       e.target[1].innerText !== 'Check out date' &&
       e.target[2].value &&
@@ -32,7 +41,7 @@ const BookingRoom = ({ price, title }: { price: number, title: string }) => {
         `/booking/?firstDate=${e.target[0].innerText}&secondaryDate=${e.target[1].innerText}&adults=${e.target[2].value}&children=${e.target[3].value}&price=${price}&title=${title}&start=${e.target[0].innerText}&end=${e.target[1].innerText}`
       )
     } else {
-      setError(true)
+      toastAlert()
     }
   }
 
@@ -46,15 +55,11 @@ const BookingRoom = ({ price, title }: { price: number, title: string }) => {
         Check-in time is 12:00 PM, checkout time is 11:59 AM. If you leave
         behind any items, please contact the receptionist.
       </p>
-     <div className='w-full flex justify-center'>
-     {error? <ToastAlert text='Please complete all fields correctly!' classToast='bg-red-500 text-white'/>:null}
-      </div>
-        
+
       <form
         onSubmit={handleSubmit}
         className='w-full flex flex-col gap-8'
       >
-        
         <div className='grid grid-cols-2 gap-4'>
           <DatePicker label='Check in date' />
           <DatePicker label='Check out date' />
