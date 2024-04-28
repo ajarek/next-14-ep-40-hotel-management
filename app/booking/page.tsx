@@ -26,9 +26,15 @@ const Booking = ({ searchParams }: { searchParams: any }) => {
             <th className='border-2 border-primary py-4'>Start</th>
             <th className='border-2 border-primary py-4'>End</th>
             <th className='border-2 border-primary py-4 '>Booking days</th>
-            <th className='border-2 border-primary py-4 max-sm:hidden'>Adults</th>
-            <th className='border-2 border-primary py-4 max-sm:hidden'>Children</th>
-            <th className='border-2 border-primary py-4 max-sm:hidden'>Price $</th>
+            <th className='border-2 border-primary py-4 max-sm:hidden'>
+              Adults
+            </th>
+            <th className='border-2 border-primary py-4 max-sm:hidden'>
+              Children
+            </th>
+            <th className='border-2 border-primary py-4 max-sm:hidden'>
+              Price $
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -55,7 +61,7 @@ const Booking = ({ searchParams }: { searchParams: any }) => {
           </tr>
         </tbody>
       </table>
-      <Payment allPayValue={(price*period).toFixed(2)} />
+      <Payment allPayValue={(price * period).toFixed(2)} />
     </div>
   )
 }
