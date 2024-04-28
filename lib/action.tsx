@@ -1,4 +1,5 @@
 'use server'
+
 import connectToDb from './connectToDb'
 import { User } from './models'
 import { revalidatePath } from 'next/cache'
