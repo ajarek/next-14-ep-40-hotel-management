@@ -6,7 +6,7 @@ const Footer = () => {
   const pathname = usePathname()
   return (
     <footer className=' p-10  flex flex-col justify-start items-center gap-4 border-t-2   '>
-      <nav className='w-1/2 grid grid-cols-3 gap-4 '>
+      <nav className='w-1/2 grid grid-cols-3 gap-4 max-sm:w-full'>
         <Link
           href='/'
           className={`flex items-center justify-center gap-4 hover:bg-primary  hover:text-primary-foreground hover:rounded-sm  rounded-sm px-4 py-1 transition ${
@@ -70,7 +70,7 @@ const Footer = () => {
         </div>
       </nav>
       <aside>
-        <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+        <p className='max-sm:text-center'>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
       </aside>
     </footer>
   )

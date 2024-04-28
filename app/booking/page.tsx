@@ -17,18 +17,18 @@ const Booking = ({ searchParams }: { searchParams: any }) => {
   const period = (second.getTime() - first.getTime()) / (1000 * 60 * 60 * 24)
 
   return (
-    <div className='min-h-[calc(100vh-64px)]  flex flex-col items-center justify-start px-24 pb-4 '>
+    <div className='min-h-[calc(100vh-64px)]  flex flex-col items-center justify-start px-24 pb-4 max-sm:px-4'>
       <h1 className='text-2xl font-semibold'>Your booked room</h1>
-      <table className='w-full border-separate border-spacing-2 max-lg:table-auto'>
+      <table className='w-full border-separate max-sm:border-collapse border-spacing-1 max-lg:table-auto mb-6'>
         <thead>
           <tr>
             <th className='border-2 border-primary py-4'>Name Room</th>
             <th className='border-2 border-primary py-4'>Start</th>
             <th className='border-2 border-primary py-4'>End</th>
-            <th className='border-2 border-primary py-4'>Booking days</th>
-            <th className='border-2 border-primary py-4'>Adults</th>
-            <th className='border-2 border-primary py-4'>Children</th>
-            <th className='border-2 border-primary py-4'>Price $</th>
+            <th className='border-2 border-primary py-4 '>Booking days</th>
+            <th className='border-2 border-primary py-4 max-sm:hidden'>Adults</th>
+            <th className='border-2 border-primary py-4 max-sm:hidden'>Children</th>
+            <th className='border-2 border-primary py-4 max-sm:hidden'>Price $</th>
           </tr>
         </thead>
         <tbody>
@@ -43,13 +43,13 @@ const Booking = ({ searchParams }: { searchParams: any }) => {
             <td className='border-2 border-primary text-center py-4'>
               {period}
             </td>
-            <td className='border-2 border-primary text-center py-4'>
+            <td className='border-2 border-primary text-center py-4 max-sm:hidden'>
               {adults}
             </td>
-            <td className='border-2 border-primary text-center py-4'>
+            <td className='border-2 border-primary text-center py-4 max-sm:hidden'>
               {children}
             </td>
-            <td className='border-2 border-primary text-center py-4'>
+            <td className='border-2 border-primary text-center py-4 max-sm:hidden'>
               {(+price).toFixed(2)}
             </td>
           </tr>
