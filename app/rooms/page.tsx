@@ -10,7 +10,14 @@ import {
 } from '@/components/ui/card'
 import Search from '@/components/Search'
 import ButtonCard from '@/components/ButtonCard'
-const Rooms = () => {
+import { auth } from '@/app/api/auth/auth'
+import { redirect } from 'next/navigation'
+const Rooms =async () => {
+  const session = await auth()
+
+  if (!session) {
+    redirect('/register')
+  }
   return (
     <main className='w-full flex min-h-screen flex-col items-center justify-between px-24 py-12 max-sm:px-4'>
       <Search />
