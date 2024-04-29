@@ -24,6 +24,7 @@ export const {
         username: { type: 'text', required: true },
         password: { type: 'password', required: true },
       },
+      // @ts-expect-error: next-auth error
       async authorize(credentials:{username: string, password: string}) {
         await connectToDb();
 

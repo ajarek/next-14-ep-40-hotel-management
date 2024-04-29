@@ -26,7 +26,7 @@ const Rooms =async () => {
         {apartments.map((apartment) => (
           <Card key={apartment.id}>
             <CardHeader>
-              <CardTitle className='w-[300px] h-[200px] rounded-sm overflow-hidden max-lg:w-full '>
+              <CardTitle className='w-[100%] h-[200px] rounded-sm overflow-hidden max-lg:w-full '>
                 <Image
                   src={apartment.img[0]}
                   alt={apartment.title}

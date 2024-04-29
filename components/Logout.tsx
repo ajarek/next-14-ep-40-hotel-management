@@ -2,6 +2,8 @@ import Link from 'next/link'
 import LogoutBtn from './LogoutBtn'
 
 const Logout = async ({ session }: any) => {
+  console.log(session);
+  
   return (
     <>
       {session ? (
@@ -15,7 +17,7 @@ const Logout = async ({ session }: any) => {
         </Link>
       )}
       {session && (
-        <span className='px-4 max-lg:hidden'>{session.user.email}</span>
+        <span className='px-4 max-lg:hidden'>{session.user?.email}</span>
       )}
     </>
   )
