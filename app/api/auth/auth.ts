@@ -4,7 +4,7 @@ import GitHub from 'next-auth/providers/github'
 import { User } from '@/lib/models'
 import connectToDb from '@/lib/connectToDb'
 import bcrypt from 'bcryptjs'
-import { getServerSession } from 'next-auth'
+
 export const {
   auth,
 
