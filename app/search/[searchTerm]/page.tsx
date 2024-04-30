@@ -39,7 +39,7 @@ const SerachPage = async ({ params }: { params: { searchTerm: string } }) => {
               <div>$ {apartment.price}</div>
             </CardContent>
             <CardDescription>
-              <p>{apartment.description.slice(0, 80)}...</p>
+              {apartment.description.slice(0, 80)}...
             </CardDescription>
           </CardHeader>
           <CardFooter>

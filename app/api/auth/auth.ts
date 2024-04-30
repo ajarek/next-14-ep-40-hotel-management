@@ -4,9 +4,10 @@ import GitHub from 'next-auth/providers/github'
 import { User } from '@/lib/models'
 import connectToDb from '@/lib/connectToDb'
 import bcrypt from 'bcryptjs'
-
+import { getServerSession } from 'next-auth'
 export const {
   auth,
+
   handlers: { GET, POST },
 } = NextAuth({
   pages: {
@@ -25,33 +26,34 @@ export const {
         password: { type: 'password', required: true },
       },
       // @ts-expect-error: next-auth error
-      async authorize(credentials:{username: string, password: string}) {
-        await connectToDb();
+      async authorize(credentials: { username: string; password: string }) {
+        await connectToDb()
 
         try {
-          const user = await User.findOne({ username: credentials.username });
+          const user = await User.findOne({ username: credentials.username })
 
           if (user) {
             const isPasswordCorrect = await bcrypt.compare(
               credentials.password,
               user.password
-            );
+            )
 
             if (isPasswordCorrect) {
-             
-              const redirectUrl: string = '/rooms'
-
               return {
                 user,
-                redirectUrl, 
-              };
+              }
             }
           }
         } catch (err: any) {
-          throw new Error(err);
+          throw new Error(err)
         }
       },
     }),
   ],
   secret: process.env.AUTH_SECRET,
-});
+  callbacks: {
+    async redirect({ url, baseUrl }) {
+      return baseUrl + '/rooms'
+    },
+  },
+})

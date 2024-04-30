@@ -40,7 +40,7 @@ const Rooms =async () => {
                 <div>$ {apartment.price}</div>
               </CardContent>
               <CardDescription>
-                <p>{apartment.description.slice(0, 80)}...</p>
+                {apartment.description.slice(0, 80)}...
               </CardDescription>
             </CardHeader>
             <CardFooter>
